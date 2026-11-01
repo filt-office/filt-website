@@ -360,20 +360,28 @@
 }
 
 /* A field is one cell: label top left, value bottom right, both as wide as the cell (breaks are the editor's). */
+/* Label and value share the whole cell (one grid area, laid over each other): the label is pinned top
+   left and the value bottom right, so a two-line value's first line sits beside the label. */
 .filt-project-mount .fixed-table .field-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template: 1fr / 1fr;
   min-height: calc(var(--overview-row-height) - 4px);
 }
 
+.filt-project-mount .fixed-table .field-label,
+.filt-project-mount .fixed-table .field-value {
+  grid-area: 1 / 1;
+}
+
 .filt-project-mount .fixed-table .field-label {
+  align-self: start;
   font-weight: 700;
   text-transform: uppercase;
   text-align: left;
 }
 
 .filt-project-mount .fixed-table .field-value {
+  align-self: end;
   text-align: right;
 }
 
