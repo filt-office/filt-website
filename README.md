@@ -11,7 +11,7 @@ filt.kr(아임웹)이 실제로 불러오는 **게시본**입니다. 이 저장�
 | filt-office/filt-website-editor (비공개) | 원본: 빌더, 템플릿, 데이터, 원본 이미지, 게시 스크립트 |
 | **filt-office/filt-website** (여기) | 게시본: 템플릿 JS·CSS, 공개용 JSON, `version.json`, 빌더 화면 사본(`builder/`) |
 | [filt-office/filt-website-images](https://github.com/filt-office/filt-website-images) | 웹용으로 줄인 사진 (GitHub Pages) |
-| filtehwa/filt_website | 옛 아임웹 코드 위젯 백업 (읽기 전용) |
+| filt-office/imweb | 옛 아임웹 코드 위젯 백업 (읽기 전용) |
 
 ## 무엇이 어떻게 쓰이나
 
