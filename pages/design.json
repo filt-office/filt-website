@@ -27,7 +27,7 @@
       {
         "id": "body",
         "name": "본문",
-        "pc": 12,
+        "pc": 13.5,
         "mobile": 13.5,
         "weight": 500,
         "line": 1.8
@@ -35,7 +35,7 @@
       {
         "id": "caption",
         "name": "캡션",
-        "pc": 9,
+        "pc": 10,
         "mobile": 10,
         "weight": 300,
         "line": 1.25
