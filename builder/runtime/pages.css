@@ -531,12 +531,17 @@ body.menu-open .filt-page .info-desktop .left {
   .filt-page .gap-15 { height: 15px; }
 
   /* OFFICE */
-   .filt-page .info-mobile[data-page="office"] .office-section > p + p {
-    margin-top: 8px;
-  }
   .filt-page .office-content { color: #000; font-size: 1rem; line-height: 1.5; }
   .filt-page .office-section { margin-left: 5px; font-size: 1rem; }
-  .filt-page .divider-hr {
+  .filt-page .info-mobile[data-page="office"] .office-section > p {
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.filt-page .info-mobile[data-page="office"] .office-section > p + p {
+  margin-top: 8px;
+}
+    .filt-page .divider-hr {
     width: 100vw;
     height: 0.5px;
     margin: 0;
