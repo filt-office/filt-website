@@ -563,6 +563,9 @@ body.menu-open .filt-page .info-desktop .left {
   .filt-page .people-block.always-open .timeline { min-height: 200px; max-height: 2000px; }
 
   /* NEWS */
+  .filt-page .news-row:not(.open) + .timeline {
+  border-bottom: 0;
+}
   .filt-page .news-row {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
