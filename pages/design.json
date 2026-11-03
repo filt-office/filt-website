@@ -51,8 +51,8 @@
       {
         "id": "overview-title",
         "name": "개요표 제목",
-        "pc": 10,
-        "mobile": 10,
+        "pc": 11.5,
+        "mobile": 11.5,
         "weight": 700,
         "line": 1.3
       },

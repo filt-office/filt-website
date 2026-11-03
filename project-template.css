@@ -271,7 +271,7 @@
 
 /* Builder rich text (b, i, u, s, span style="color / font-size / …") stays inline, and its inline
    color and size win; everything else inherits the body text style whatever the host page sets. */
-.filt-project-mount .side-section .text-content *:not(b, strong, i, em, u, s, span, a, br) {
+.filt-project-mount .side-section .text-content *:not(b, strong, i, em, u, s, span, a) {
   display: block !important;
 }
 
@@ -897,6 +897,3 @@ body.filt-menu-open .filt-project-mount .img-section {
     padding-inline: 0 !important;
   }
 }
-
-.filt-project-mount .side-section .text-content br { display: inline !important; }
-.filt-project-mount .side-section .text-content :is(p, div):empty { min-height: 1lh; }
