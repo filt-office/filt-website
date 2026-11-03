@@ -1,6 +1,6 @@
 {
   "id": "tempin",
-  "title": "Tempin Office (TEST) | PROJECT INFO",
+  "title": "TEMPIN OFFICE | 템프인 오피스",
   "mobile": {
     "drawings": {
       "coordinateSrc": "assets/tempin/MOB/north.svg",
@@ -8,54 +8,166 @@
       "images": [
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_floor--b1.svg",
-          "title": "B1F PLAN",
-          "alt": "Tempin B1F Plan"
+          "title": "B1F PLAN"
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_floor-1.svg",
-          "title": "1F PLAN",
-          "alt": "Tempin 1F Plan"
+          "title": "1F PLAN"
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_floor-2.svg",
-          "title": "2F PLAN",
-          "alt": "Tempin 2F Plan"
+          "title": "2F PLAN"
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_floor-3.svg",
-          "title": "3F PLAN",
-          "alt": "Tempin 3F Plan"
+          "title": "3F PLAN"
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_floor-4.svg",
-          "title": "4F PLAN",
-          "alt": "Tempin 4F Plan"
+          "title": "4F PLAN"
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_roof.svg",
-          "title": "ROOF PLAN",
-          "alt": "Tempin Roof Plan"
+          "title": "ROOF PLAN"
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_section.svg",
           "title": "SECTION",
-          "alt": "Tempin Section",
           "coordinate": false
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_elev-a.svg",
           "title": "ELEVATION A",
-          "alt": "Tempin Elevation A",
           "coordinate": false
         },
         {
           "src": "assets/tempin/MOB/260227_mob_tempin_elev-b.svg",
           "title": "ELEVATION B",
-          "alt": "Tempin Elevation B",
           "coordinate": false
         }
       ]
-    }
+    },
+    "images": [
+      {
+        "src": "assets/tempin/PC/cb1135fa8dcde.jpg",
+        "class": "portrait",
+        "alt": "01 Tempin Exterior - Daytime View",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/5e8f5f4d39c9a.jpg",
+        "class": "portrait",
+        "alt": "02 Tempin Exterior - Daytime View",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/c89b74aafbf16.jpg",
+        "class": "portrait",
+        "alt": "03 Tempin Exterior - Daytime View",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/17f046b3e035c.jpg",
+        "class": "portrait",
+        "alt": "04 Tempin Exterior - Daytime View",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/aa6d4404472bd.jpg",
+        "class": "landscape",
+        "alt": "05 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/1775fe3ca0217.jpg",
+        "class": "landscape",
+        "alt": "06 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/a5521c1127606.jpg",
+        "class": "landscape",
+        "alt": "07 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/5222990a8c499.jpg",
+        "class": "landscape",
+        "alt": "08 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/c57be88d18327.jpg",
+        "class": "portrait",
+        "alt": "09 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/9e857704e0cc8.jpg",
+        "class": "landscape",
+        "alt": "10 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/15ec91b82fed5.jpg",
+        "class": "landscape",
+        "alt": "11 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/57a2aefd1f994.jpg",
+        "class": "landscape",
+        "alt": "12 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/d95d76b59a8b6.jpg",
+        "class": "landscape",
+        "alt": "13 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/9f457b13bf411.jpg",
+        "class": "landscape",
+        "alt": "14 Tempin Office - Interior",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/a61cbc90150e5.jpg",
+        "class": "portrait",
+        "alt": "15 Tempin Exterior - Night View",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/9ed7654a4931e.jpg",
+        "class": "portrait",
+        "alt": "16 Tempin Exterior - Night View",
+        "fit": "auto",
+        "rotation": 0
+      },
+      {
+        "src": "assets/tempin/PC/3e19b5f754997.jpg",
+        "class": "portrait",
+        "alt": "17 Tempin Exterior - Night View",
+        "fit": "auto",
+        "rotation": 0
+      }
+    ]
   },
   "overview": {
     "titleEn": "TEMPIN OFFICE",
@@ -117,185 +229,653 @@
     {
       "src": "assets/tempin/PC/cb1135fa8dcde.jpg",
       "class": "portrait",
-      "alt": "#01 Tempin Exterior - Daytime View",
+      "alt": "01 Tempin Exterior - Daytime View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/5e8f5f4d39c9a.jpg",
       "class": "portrait",
-      "alt": "#02 Tempin Exterior - Daytime View",
+      "alt": "02 Tempin Exterior - Daytime View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/c89b74aafbf16.jpg",
       "class": "portrait",
-      "alt": "#03 Tempin Exterior - Daytime View",
+      "alt": "03 Tempin Exterior - Daytime View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/17f046b3e035c.jpg",
       "class": "portrait",
-      "alt": "#04 Tempin Exterior - Daytime View",
+      "alt": "04 Tempin Exterior - Daytime View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/aa6d4404472bd.jpg",
       "class": "landscape",
-      "alt": "#05 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "05 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/1775fe3ca0217.jpg",
       "class": "landscape",
-      "alt": "#06 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "06 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/a5521c1127606.jpg",
       "class": "landscape",
-      "alt": "#07 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "07 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/5222990a8c499.jpg",
       "class": "landscape",
-      "alt": "#08 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "08 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/c57be88d18327.jpg",
       "class": "portrait",
-      "alt": "#09 Tempin Office - Interior",
+      "alt": "09 Tempin Office - Interior",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/9e857704e0cc8.jpg",
       "class": "landscape",
-      "alt": "#10 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "10 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/15ec91b82fed5.jpg",
       "class": "landscape",
-      "alt": "#11 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "11 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/57a2aefd1f994.jpg",
       "class": "landscape",
-      "alt": "#12 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "12 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/d95d76b59a8b6.jpg",
       "class": "landscape",
-      "alt": "#13 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "13 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/9f457b13bf411.jpg",
       "class": "landscape",
-      "alt": "#14 Tempin Office - Interior",
-      "fit": "auto",
+      "alt": "14 Tempin Office - Interior",
+      "fit": "contain",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/a61cbc90150e5.jpg",
       "class": "portrait",
-      "alt": "#15 Tempin Exterior - Night View",
+      "alt": "15 Tempin Exterior - Night View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/9ed7654a4931e.jpg",
       "class": "portrait",
-      "alt": "#16 Tempin Exterior - Night View",
+      "alt": "16 Tempin Exterior - Night View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/3e19b5f754997.jpg",
       "class": "portrait",
-      "alt": "#17 Tempin Exterior - Night View",
+      "alt": "17 Tempin Exterior - Night View",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_floor--b1.svg",
       "class": "drawing",
-      "alt": "#18 Tempin - B1F Plan",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_floor-1.svg",
       "class": "drawing",
-      "alt": "#19 Tempin - 1st Floor Plan",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_floor-2.svg",
       "class": "drawing",
-      "alt": "#20 Tempin - 2nd Floor Plan",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_floor-3.svg",
       "class": "drawing",
-      "alt": "#21 Tempin - 3rd Floor Plan",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_floor-4.svg",
       "class": "drawing",
-      "alt": "#22 Tempin - 4th Floor Plan",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_roof.svg",
       "class": "drawing",
-      "alt": "#23 Tempin - Roof Plan",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_section.svg",
       "class": "drawing",
-      "alt": "#24 Tempin - Section",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_elev-a.svg",
       "class": "drawing",
-      "alt": "#25 Tempin - Elevation A",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     },
     {
       "src": "assets/tempin/PC/260227_tempin_elev-b.svg",
       "class": "drawing",
-      "alt": "#26 Tempin - Elevation B",
+      "alt": "",
       "fit": "auto",
       "rotation": 0
     }
   ],
-  "descriptionHtml": "<br><br>\r\n      이 프로젝트는 일반주거지역의 소형 필지에 위치한 다가구 주택을 오피스로 리노베이션한 작업이다. 1990년에 준공된 기존 건물은 허가도서와 실제 건물의 대부분이 일치하지 않았다. 건물 후면에는 불법으로 증축된 발코니가 매달려 있었고, 발코니와 마당은 폴리카보네이트와 샌드위치 패널로 덧씌워져 있었다. 공간을 최대한 활용하기 위해 덧붙여진 구조물들이었다.\r\n      <br><br>\r\n      <figure class=\"side-figure\">\r\n        <img class=\"side-single-img\"\r\n             src=\"assets/tempin/PC/18ee9357fee2c.png\"\r\n             alt=\"Tempin side image2\">\r\n        <figcaption class=\"side-caption\">      *리노베이션 전 건물 후면 위반건축물    </figcaption>\r\n      </figure>\r\n      건물의 실제 윤곽과 구조를 파악하기 위해 부수적인 요소들을 모두 철거한 뒤 실측을 진행했다. 그 결과, 수직으로 이동할 수 있는 동선은 불법으로 축조된 발코니의 계단뿐이었다. 실측 과정에서는 건물의 구조 또한 예상과 달랐다. 1층은 철근콘크리트 구조였지만, 2층과 3층은 1층의 구조열과 무관하게 배치된 조적 벽체로 이루어져 있었다. 이 건물에 우선적으로 필요한 것은 적법한 수직 동선을 확보하고, 위반 요소를 모두 덜어내어 건물의 적법한 외형을 다시 형성하는 일이었다.\r\n      <br><br>\r\n      <figure class=\"side-figure\">\r\n        <img class=\"side-single-img\"\r\n             src=\"assets/tempin/PC/2529930afb6fc.png\"\r\n             alt=\"Tempin side image1\">\r\n        <figcaption class=\"side-caption\">      *리노베이션 전 목화부동산 건물</figcaption>\r\n      </figure>\r\n      철골 보강은 1층 기존 철근콘크리트 구조열을 따라 이루어졌다. 조적 내력벽이 어긋나 있던 2층과 3층, 그리고 새로 증축된 4층까지 하나의 구조열이 관통한다. 구조적 기능을 더 이상 수행하지 않는 내부의 조적 벽체는 대부분 철거되었지만, 문제는 구조열과 일치하지 않는 조적 외피였다.\r\n      <br><br>\r\n      덧댄 외피는 서로 다른 질서를 중재한다. 개방성을 확보하기 위해 기존 개구부는 구조열에 맞추어 선택적으로 철거하거나 유지하였고, 철거에 따라 지지가 필요한 조적 인방은 다시 보강하였다. 그 위에 적절한 단열 성능을 확보하기 위해 덧붙인 단열재는 스터코로 마감했다. 반복되는 T자 형태의 스터코는 보강된 구조열의 질서를 시각적으로 투영하고, 그 사이의 분절은 외피가 가볍게 덧붙여진 또 하나의 층위임을 드러낸다.\r\n      <br><br>\r\n      작은 건축면적 안에서 내부는 기능을 압축하고 전용면적을 최대한 확보하도록 계획하였다. 횡력에 저항하는 트러스는 건물의 양쪽 코너에 배치되어 계단실과 오피스 공간의 구석에서 X자 형태로 드러난다.\r\n      1층에서는 기존 철근콘크리트 구조와 이를 보강한 철판을 그대로 노출하였다. 기존 건물의 구조가 곧 내부의 마감이 된다. 2층부터 4층에서는 은빛의 철골을 노출하여 기존 건물 속에 새롭게 삽입된 구조를 드러냈다. 바닥과 벽은 무채색의 톤으로 정리하고, 구조와 기본적인 재료만으로 내부를 구성하였다. 절제된 내부에서는 개구부 너머의 외부 풍경이 상대적으로 선명하게 드러난다.\r\n      <br><br>\r\n      이 작은 건물의 외피는 정돈된 질서를 드러내지만, 그 형태를 구축하는 과정은 기존 건물이 지닌 구조적 불일치에서 시작된다. 안에서는 정렬된 구조가 노출되고, 밖에서는 하나의 표면으로 정리된다.\r\n      <br><br>"
+  "descriptionHtml": "<br><br>\n이 프로젝트는 일반주거지역의 소형 필지에 위치한 다가구 주택을 오피스로 리노베이션한 작업이다. 1990년에 준공된 기존 건물은 허가도서와 실제 건물의 대부분이 일치하지 않았다. 건물 후면에는 불법으로 증축된 발코니가 매달려 있었고, 발코니와 마당은 폴리카보네이트와 샌드위치 패널로 덧씌워져 있었다. 공간을 최대한 활용하기 위해 덧붙여진 구조물들이었다.\n<br><br>\n<figure class=\"side-figure\">\n  <img class=\"side-single-img\" src=\"assets/tempin/PC/18ee9357fee2c.png\" alt=\"*리노베이션 전 건물 후면 위반건축물\">\n  <figcaption class=\"side-caption\">*리노베이션 전 건물 후면 위반건축물</figcaption>\n</figure>\n건물의 실제 윤곽과 구조를 파악하기 위해 부수적인 요소들을 모두 철거한 뒤 실측을 진행했다. 그 결과, 수직으로 이동할 수 있는 동선은 불법으로 축조된 발코니의 계단뿐이었다. 실측 과정에서는 건물의 구조 또한 예상과 달랐다. 1층은 철근콘크리트 구조였지만, 2층과 3층은 1층의 구조열과 무관하게 배치된 조적 벽체로 이루어져 있었다. 이 건물에 우선적으로 필요한 것은 적법한 수직 동선을 확보하고, 위반 요소를 모두 덜어내어 건물의 적법한 외형을 다시 형성하는 일이었다.\n<br><br>\n<figure class=\"side-figure\">\n  <img class=\"side-single-img\" src=\"assets/tempin/PC/2529930afb6fc.png\" alt=\"*리노베이션 전 목화부동산 건물\">\n  <figcaption class=\"side-caption\">*리노베이션 전 목화부동산 건물</figcaption>\n</figure>\n철골 보강은 1층 기존 철근콘크리트 구조열을 따라 이루어졌다. 조적 내력벽이 어긋나 있던 2층과 3층, 그리고 새로 증축된 4층까지 하나의 구조열이 관통한다. 구조적 기능을 더 이상 수행하지 않는 내부의 조적 벽체는 대부분 철거되었지만, 문제는 구조열과 일치하지 않는 조적 외피였다.\n<br><br>\n덧댄 외피는 서로 다른 질서를 중재한다. 개방성을 확보하기 위해 기존 개구부는 구조열에 맞추어 선택적으로 철거하거나 유지하였고, 철거에 따라 지지가 필요한 조적 인방은 다시 보강하였다. 그 위에 적절한 단열 성능을 확보하기 위해 덧붙인 단열재는 스터코로 마감했다. 반복되는 T자 형태의 스터코는 보강된 구조열의 질서를 시각적으로 투영하고, 그 사이의 분절은 외피가 가볍게 덧붙여진 또 하나의 층위임을 드러낸다.\n<br><br>\n작은 건축면적 안에서 내부는 기능을 압축하고 전용면적을 최대한 확보하도록 계획하였다. 횡력에 저항하는 트러스는 건물의 양쪽 코너에 배치되어 계단실과 오피스 공간의 구석에서 X자 형태로 드러난다. 1층에서는 기존 철근콘크리트 구조와 이를 보강한 철판을 그대로 노출하였다. 기존 건물의 구조가 곧 내부의 마감이 된다. 2층부터 4층에서는 은빛의 철골을 노출하여 기존 건물 속에 새롭게 삽입된 구조를 드러냈다. 바닥과 벽은 무채색의 톤으로 정리하고, 구조와 기본적인 재료만으로 내부를 구성하였다. 절제된 내부에서는 개구부 너머의 외부 풍경이 상대적으로 선명하게 드러난다.\n<br><br>\n이 작은 건물의 외피는 정돈된 질서를 드러내지만, 그 형태를 구축하는 과정은 기존 건물이 지닌 구조적 불일치에서 시작된다. 안에서는 정렬된 구조가 노출되고, 밖에서는 하나의 표면으로 정리된다.\n<br><br>\n",
+  "description": [
+    {
+      "type": "text",
+      "text": "이 프로젝트는 일반주거지역의 소형 필지에 위치한 다가구 주택을 오피스로 리노베이션한 작업이다. 1990년에 준공된 기존 건물은 허가도서와 실제 건물의 대부분이 일치하지 않았다. 건물 후면에는 불법으로 증축된 발코니가 매달려 있었고, 발코니와 마당은 폴리카보네이트와 샌드위치 패널로 덧씌워져 있었다. 공간을 최대한 활용하기 위해 덧붙여진 구조물들이었다."
+    },
+    {
+      "type": "image",
+      "src": "assets/tempin/PC/18ee9357fee2c.png",
+      "caption": "*리노베이션 전 건물 후면 위반건축물"
+    },
+    {
+      "type": "text",
+      "text": "건물의 실제 윤곽과 구조를 파악하기 위해 부수적인 요소들을 모두 철거한 뒤 실측을 진행했다. 그 결과, 수직으로 이동할 수 있는 동선은 불법으로 축조된 발코니의 계단뿐이었다. 실측 과정에서는 건물의 구조 또한 예상과 달랐다. 1층은 철근콘크리트 구조였지만, 2층과 3층은 1층의 구조열과 무관하게 배치된 조적 벽체로 이루어져 있었다. 이 건물에 우선적으로 필요한 것은 적법한 수직 동선을 확보하고, 위반 요소를 모두 덜어내어 건물의 적법한 외형을 다시 형성하는 일이었다."
+    },
+    {
+      "type": "image",
+      "src": "assets/tempin/PC/2529930afb6fc.png",
+      "caption": "*리노베이션 전 목화부동산 건물"
+    },
+    {
+      "type": "text",
+      "text": "철골 보강은 1층 기존 철근콘크리트 구조열을 따라 이루어졌다. 조적 내력벽이 어긋나 있던 2층과 3층, 그리고 새로 증축된 4층까지 하나의 구조열이 관통한다. 구조적 기능을 더 이상 수행하지 않는 내부의 조적 벽체는 대부분 철거되었지만, 문제는 구조열과 일치하지 않는 조적 외피였다.\n\n덧댄 외피는 서로 다른 질서를 중재한다. 개방성을 확보하기 위해 기존 개구부는 구조열에 맞추어 선택적으로 철거하거나 유지하였고, 철거에 따라 지지가 필요한 조적 인방은 다시 보강하였다. 그 위에 적절한 단열 성능을 확보하기 위해 덧붙인 단열재는 스터코로 마감했다. 반복되는 T자 형태의 스터코는 보강된 구조열의 질서를 시각적으로 투영하고, 그 사이의 분절은 외피가 가볍게 덧붙여진 또 하나의 층위임을 드러낸다.\n\n작은 건축면적 안에서 내부는 기능을 압축하고 전용면적을 최대한 확보하도록 계획하였다. 횡력에 저항하는 트러스는 건물의 양쪽 코너에 배치되어 계단실과 오피스 공간의 구석에서 X자 형태로 드러난다. 1층에서는 기존 철근콘크리트 구조와 이를 보강한 철판을 그대로 노출하였다. 기존 건물의 구조가 곧 내부의 마감이 된다. 2층부터 4층에서는 은빛의 철골을 노출하여 기존 건물 속에 새롭게 삽입된 구조를 드러냈다. 바닥과 벽은 무채색의 톤으로 정리하고, 구조와 기본적인 재료만으로 내부를 구성하였다. 절제된 내부에서는 개구부 너머의 외부 풍경이 상대적으로 선명하게 드러난다.\n\n이 작은 건물의 외피는 정돈된 질서를 드러내지만, 그 형태를 구축하는 과정은 기존 건물이 지닌 구조적 불일치에서 시작된다. 안에서는 정렬된 구조가 노출되고, 밖에서는 하나의 표면으로 정리된다."
+    }
+  ],
+  "gallery": [
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "01 Tempin Exterior - Daytime View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/cb1135fa8dcde.jpg",
+      "mob": "assets/tempin/PC/cb1135fa8dcde.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "02 Tempin Exterior - Daytime View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/5e8f5f4d39c9a.jpg",
+      "mob": "assets/tempin/PC/5e8f5f4d39c9a.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "03 Tempin Exterior - Daytime View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/c89b74aafbf16.jpg",
+      "mob": "assets/tempin/PC/c89b74aafbf16.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "04 Tempin Exterior - Daytime View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/17f046b3e035c.jpg",
+      "mob": "assets/tempin/PC/17f046b3e035c.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "05 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/aa6d4404472bd.jpg",
+      "mob": "assets/tempin/PC/aa6d4404472bd.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "06 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/1775fe3ca0217.jpg",
+      "mob": "assets/tempin/PC/1775fe3ca0217.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "07 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/a5521c1127606.jpg",
+      "mob": "assets/tempin/PC/a5521c1127606.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "08 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/5222990a8c499.jpg",
+      "mob": "assets/tempin/PC/5222990a8c499.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "09 Tempin Office - Interior",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/c57be88d18327.jpg",
+      "mob": "assets/tempin/PC/c57be88d18327.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "10 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/9e857704e0cc8.jpg",
+      "mob": "assets/tempin/PC/9e857704e0cc8.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "11 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/15ec91b82fed5.jpg",
+      "mob": "assets/tempin/PC/15ec91b82fed5.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "12 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/57a2aefd1f994.jpg",
+      "mob": "assets/tempin/PC/57a2aefd1f994.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "13 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/d95d76b59a8b6.jpg",
+      "mob": "assets/tempin/PC/d95d76b59a8b6.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "landscape",
+      "alt": "14 Tempin Office - Interior",
+      "fit": "contain",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/9f457b13bf411.jpg",
+      "mob": "assets/tempin/PC/9f457b13bf411.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "15 Tempin Exterior - Night View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/a61cbc90150e5.jpg",
+      "mob": "assets/tempin/PC/a61cbc90150e5.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "16 Tempin Exterior - Night View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/9ed7654a4931e.jpg",
+      "mob": "assets/tempin/PC/9ed7654a4931e.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "photo",
+      "orientation": "portrait",
+      "alt": "17 Tempin Exterior - Night View",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/3e19b5f754997.jpg",
+      "mob": "assets/tempin/PC/3e19b5f754997.jpg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "B1F PLAN",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_floor--b1.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_floor--b1.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "1F PLAN",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_floor-1.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_floor-1.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "2F PLAN",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_floor-2.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_floor-2.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "3F PLAN",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_floor-3.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_floor-3.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "4F PLAN",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_floor-4.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_floor-4.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "ROOF PLAN",
+      "coordinate": true,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_roof.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_roof.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "SECTION",
+      "coordinate": false,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_section.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_section.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "ELEVATION A",
+      "coordinate": false,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_elev-a.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_elev-a.svg",
+      "hidePc": false,
+      "hideMob": false
+    },
+    {
+      "type": "drawing",
+      "orientation": "landscape",
+      "alt": "",
+      "fit": "auto",
+      "fitMob": "auto",
+      "rotation": 0,
+      "title": "ELEVATION B",
+      "coordinate": false,
+      "north": null,
+      "hideScale": false,
+      "scale": null,
+      "pc": "assets/tempin/PC/260227_tempin_elev-b.svg",
+      "mob": "assets/tempin/MOB/260227_mob_tempin_elev-b.svg",
+      "hidePc": false,
+      "hideMob": false
+    }
+  ]
 }
