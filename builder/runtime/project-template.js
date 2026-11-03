@@ -428,7 +428,7 @@
     let currentIndex = 1;
     let isJumping = false;
     let endTimer;
-    const isMobileLayout = () => window.matchMedia("(max-width: 768px), (hover: none) and (pointer: coarse)").matches;
+    const isMobileLayout = () => window.matchMedia("(max-width: 1024px), (any-pointer: coarse)").matches;
     const scrollToIndex = (index, smooth = true) => {
       const image = images[index];
       if (!image) return;
