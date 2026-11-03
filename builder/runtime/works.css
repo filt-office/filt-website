@@ -293,7 +293,7 @@ body.menu-open .filt-works .left {
 }
 
 /* ========== Mobile (list and gallery share the card grid) ========== */
-@media (max-width: 768px) {
+@media (max-width: 768px), (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .filt-works .works-desktop { display: none; }
   .filt-works .works-mobile { display: block; }
 
