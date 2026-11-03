@@ -499,7 +499,7 @@ body.filt-menu-open .filt-project-mount .img-section {
   left: 240px;
 }
 
-@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+@media (max-width: 1024px), (any-pointer: coarse) {
   body > .filt-project-mount {
     position: absolute !important;
     inset: 0 0 auto !important;
@@ -558,10 +558,10 @@ body.filt-menu-open .filt-project-mount .img-section {
     inset: auto;
     left: 0 !important;
     width: 100%;
-    height: 80vh;
-    height: 80svh;
-    flex: 0 0 80vh;
-    flex: 0 0 80svh;
+    height: 85vh;
+    height: 85svh;
+    flex: 0 0 85vh;
+    flex: 0 0 85svh;
     flex-direction: row;
     align-items: stretch;
     overflow-x: auto !important;
@@ -862,7 +862,7 @@ body.filt-menu-open .filt-project-mount .img-section {
   overflow-x: hidden !important;
 }
 
-@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+@media (max-width: 1024px), (any-pointer: coarse) {
   .filt-project-mount .side-section .text-content {
     overflow-x: clip !important;
   }
@@ -879,7 +879,7 @@ body.filt-menu-open .filt-project-mount .img-section {
 }
 .filt-template-error a { color: var(--filt-key, #BD005E); text-decoration: none; }
 
-@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+@media (max-width: 1024px), (any-pointer: coarse) {
   .filt-project-mount .page-container.mobile-project-layout .img-section > img {
     object-fit: contain !important;
     object-position: 50% 50% !important;
