@@ -869,3 +869,10 @@ body.filt-menu-open .filt-project-mount .img-section {
   color: #000;
 }
 .filt-template-error a { color: var(--filt-key, #BD005E); text-decoration: none; }
+
+@media (max-width: 768px) {
+  body > .filt-project-mount {
+    position: absolute !important;
+    inset: 0 0 auto !important;
+  }
+}
