@@ -746,8 +746,8 @@ body.filt-menu-open .filt-project-mount .img-section {
   .filt-project-mount .mobile-drawing-slider {
     position: relative;
     width: 100%;
-    height: 90vh;
-    height: 90dvh;
+    height: 85vh;
+    height: 85svh;
     overflow: hidden;
     background: #fff;
     touch-action: pan-y;
