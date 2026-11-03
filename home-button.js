@@ -15,7 +15,9 @@
     '#' + MENU_ROOT_ID + ' .filt-home-button:focus-visible { outline:2px solid var(--filt-key, #BD005E); outline-offset:4px; }',
     '#' + MENU_ROOT_ID + ' .filt-home-button--desktop { position:absolute; top:20px; left:20px; z-index:15; }',
     '#' + MENU_ROOT_ID + ' .filt-home-button--mobile { display:none; position:fixed; top:20px; left:20px; z-index:999993; }',
-    '@media (max-width:768px) {',
+        document.querySelector('[data-filt-works]')
+      ? '@media (max-width:768px), (orientation:landscape) and (hover:none) and (pointer:coarse) {'
+      : '@media (max-width:768px) {',
     '  #' + MENU_ROOT_ID + ' .filt-home-button--desktop { display:none; }',
     // Mobile header on every page, as on the project page: the FILT mark at the left of the 40px bar
     // (the menu dot sits at the right, from common-menu-v2.js).

@@ -62,8 +62,6 @@
   // Site colours (--filt-key, --filt-<id>) from pages/design.json.
   loadScript(new URL("design.js", templateBase).href).catch(() => {});
   // Same URLs as common-menu-v2.js, so the libraries load once.
-  const GSAP = "https://unpkg.com/gsap@3/dist/gsap.min.js";
-  const MORPH = "https://assets.codepen.io/16327/MorphSVGPlugin3.min.js";
 
   const el = (tag, className, text) => {
     const node = document.createElement(tag);
@@ -572,58 +570,21 @@
   };
 
   // ---------- HOME ----------
-  const LOADING_FROM = "M237,0v1613.63 M419.5,1568.63h195 M-240,1706.13H347 M214.5,1768.63h270 M457,1898.63h137.5 M814.5,1756.13H1300 M564.5,2038.63H843 M457,1831.13v377.5 M1039.5,1756.13v197.5 M843,2038.63H1400 M334.5,1553.63v152.5 M739.51,2556v-382.38";
-  const LOADING_TO = "M494.5,1163v230 M482,1175.5h82.5 M452,1265.5h25 M512,1265.5h40 M552,1265.5h40 M627,1265.5h40 M677,1163v85 M609.5,1163v230 M677,1283v110 M667,1265.5h60 M552,1283v110 M659.5,1380.5h-62.5";
-  const lines = (d) => d.match(/[Mm][^Mm]*/g).map((line) => line.trim());
-
   const renderHome = (data) => {
     const target = data.worksLink || worksUrl;
-    // PC: intro, own menu panel and slideshow (the common menu is not loaded on HOME).
-    const home = buildHomePC(data, target);
-
-    // Mobile: the FILT logo unfolds, then WORKS opens.
-    const loading = el("div", "home-loading");
-    const svgNs = "http://www.w3.org/2000/svg";
-    const svg = document.createElementNS(svgNs, "svg");
-    svg.setAttribute("viewBox", "0 0 1200 2600");
-    const paths = lines(LOADING_FROM).map((d) => {
-      const path = document.createElementNS(svgNs, "path");
-      path.setAttribute("d", d);
-      svg.append(path);
-      return path;
-    });
-    loading.append(svg);
-
-    let left = false;
-    const goNext = () => {
-      if (!isMobile() || left) return;
-      left = true;
-      loading.classList.add("fade-out");
-      setTimeout(() => go(target), 500);
-    };
-    svg.addEventListener("click", goNext);
-    const playLoading = async () => {
-      try {
-        await loadScript(GSAP);
-        await loadScript(MORPH);
-        window.gsap.registerPlugin(window.MorphSVGPlugin);
-      } catch (error) {
-        svg.style.opacity = "1";
-        setTimeout(goNext, 1500);
-        return;
+    const mobileHome = window.matchMedia("(max-width: 768px), (orientation: landscape) and (hover: none) and (pointer: coarse)").matches;
+    if (mobileHome) {
+      const next = new URL(target, location.href);
+      const path = (url) => url.pathname.replace(/\/+$/, "");
+      if (next.origin !== location.origin || path(next) !== path(location)) {
+        location.replace(next.href);
       }
-      const { gsap } = window;
-      gsap.to(svg, { opacity: 1, duration: 0.3, ease: "power2.out" });
-      setTimeout(() => {
-        const timeline = gsap.timeline({ defaults: { duration: 1.8, ease: "power2.inOut" }, onComplete: goNext });
-        const ends = lines(LOADING_TO);
-        paths.forEach((path, index) => timeline.to(path, { morphSVG: { shape: ends[index], shapeIndex: 0 } }, 0));
-      }, 300);
-    };
-    if (isMobile()) playLoading();
+      return;
+    }
 
-    mount.replaceChildren(home, loading);
-    if (!isMobile()) home.start();
+    const home = buildHomePC(data, target);
+    mount.replaceChildren(home);
+    home.start();
   };
 
   // ---------- OFFICE ----------

@@ -2,15 +2,17 @@
   "version": 1,
   "contact": [
     {
-      "text": "3F. 161, Tojeong-ro, Mapo-gu, Seoul, Korea (postal code 04077)",
-      "mobileText": "3F. 161, Tojeong-ro, Mapo-gu, Seoul, Korea (04077)",
+      "text": "3F. 161, Tojeong-ro, Mapo-gu, Seoul, Korea (04077)\n서울특별시 마포구 토정로 161, 3층 (04077)",
+      "mobileText": "3F. 161, Tojeong-ro, Mapo-gu, Seoul, Korea (04077)\n서울특별시 마포구 토정로 161, 3층 (04077)",
       "link": "https://filt.kr/0302002"
     },
     {
-      "text": "+82 2 336 9729"
+      "text": "T | +82 (0)2 336 9729",
+      "mobileText": "T | +82 (0)2 336 9729"
     },
     {
-      "text": "office@filt.kr",
+      "text": "E | office@filt.kr",
+      "mobileText": "E | office@filt.kr",
       "link": "mailto:OFFICE@FILT.KR"
     },
     {
@@ -25,7 +27,7 @@
       "roleKo": "소장 · 대표 건축사",
       "nameEn": "KYONG, YEONSUNG",
       "roleEn": "PRINCIPAL ARCHITECT · KIRA",
-      "email": "KYONG@FILT.KR",
+      "email": "kyong@filt.kr",
       "career": [
         {
           "years": "2007–2015",
@@ -75,7 +77,7 @@
       "roleKo": "디자이너",
       "nameEn": "KIM, HYERI",
       "roleEn": "DESIGNER",
-      "email": "HYERI@FILT.KR",
+      "email": "hyeri@filt.kr",
       "career": [
         {
           "years": "2018–2024",
@@ -96,25 +98,25 @@
       ]
     },
     {
-      "nameKo": "강이화",
+      "nameKo": "김정하",
       "roleKo": "디자이너",
-      "nameEn": "KANG, LEEHWA",
+      "nameEn": "KIM, JUNGHA",
       "roleEn": "DESIGNER",
-      "email": "EHWA@FILT.KR",
+      "email": "jungha@filt.kr",
       "career": [
         {
-          "years": "2019–2025",
+          "years": "2020–2026",
           "org": "Ewha Womans University",
           "title": "Bachelor of Architecture",
           "mobileTitle": "B.Arch"
         },
         {
-          "years": "2025–2025",
+          "years": "2024-2025",
           "org": "KYONGYOON Architects",
           "title": "Intern"
         },
         {
-          "years": "2025–",
+          "years": "2026-",
           "org": "FILT Architects",
           "title": "Designer"
         }
