@@ -190,6 +190,9 @@
       img.src = resolveAsset(work.cardThumb || work.thumb, "MOB");
       img.alt = work.nameEn || work.nameKo || "";
       img.loading = "lazy";
+      const setRatio = () => img.classList.toggle("is-portrait", img.naturalHeight > img.naturalWidth);
+      img.addEventListener("load", setRatio, { once: true });
+      if (img.complete) setRatio();
       thumbBox.append(img);
       item.append(thumbBox, el("h6", "works-title", `${work.nameKo || ""}|${work.nameEn || ""}`));
       linkTo(item, work);
@@ -274,7 +277,7 @@
   const script = document.currentScript;
   if (!mount || !script || script.dataset.view === "gallery" || mount.dataset.introBound) return;
   mount.dataset.introBound = "true";
-  const mobile = matchMedia("(max-width: 768px), (orientation: landscape) and (hover: none) and (pointer: coarse)");
+  const mobile = matchMedia("(max-width: 1024px), (any-pointer: coarse)");
   const reduced = matchMedia("(prefers-reduced-motion: reduce)");
   const url = new URL(location.href);
   const entry = url.searchParams.get("filt_intro");
