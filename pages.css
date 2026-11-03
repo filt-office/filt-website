@@ -610,17 +610,7 @@ body.menu-open .filt-page .info-desktop .left {
     width: 100vw !important;
     max-width: none !important;
     margin-inline: calc(50% - 50vw) !important;
-    padding-inline: 0 !important;
+    padding-inline: 8px !important;
   }
-  .filt-page .info-mobile .office-section,
-  .filt-page .info-mobile .people-row,
-  .filt-page .info-mobile .news-row,
-  .filt-page .info-mobile .news-body {
-    box-sizing: border-box;
-    margin-inline: 0;
-    padding-inline: 8px;
-  }
-
-  .filt-page .info-mobile .people-block { margin-inline: 0; }
-  .filt-page .info-mobile .divider-hr { width: 100%; }
+  .filt-page .office-section { margin-left: 0; }
 }
