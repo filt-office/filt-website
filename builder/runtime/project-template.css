@@ -886,3 +886,14 @@ body.filt-menu-open .filt-project-mount .img-section {
     padding: 0 !important;
   }
 }
+
+@media (max-width: 1024px), (any-pointer: coarse) {
+  body > .filt-project-mount { width: 100vw !important; margin-inline: 0 !important; }
+  body .filt-project-mount > main.mobile-project-layout {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin-inline: 0 !important;
+    padding-inline: 0 !important;
+  }
+}
