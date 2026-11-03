@@ -572,6 +572,7 @@ body.filt-menu-open .filt-project-mount .img-section {
     height: 100% !important;
     flex: 0 0 100% !important;
     object-fit: contain !important;
+    object-position: center top !important;
     background: #fff;
     scroll-snap-align: start;
   }
