@@ -30,21 +30,21 @@
         "pc": 13.5,
         "mobile": 13.5,
         "weight": 500,
-        "line": 1.8
+        "line": 1.6
       },
       {
         "id": "caption",
         "name": "캡션",
-        "pc": 10,
-        "mobile": 10,
+        "pc": 12,
+        "mobile": 12,
         "weight": 300,
         "line": 1.25
       },
       {
         "id": "overview",
         "name": "개요표",
-        "pc": 10,
-        "mobile": 10,
+        "pc": 12,
+        "mobile": 12,
         "weight": 400,
         "line": 1.6
       },

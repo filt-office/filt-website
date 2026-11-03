@@ -293,7 +293,7 @@ body.menu-open .filt-works .left {
 }
 
 /* ========== Mobile (list and gallery share the card grid) ========== */
-@media (max-width: 768px), (orientation: landscape) and (hover: none) and (pointer: coarse) {
+@media (max-width: 1024px), (any-pointer: coarse) {
   .filt-works .works-desktop { display: none; }
   .filt-works .works-mobile { display: block; }
 
@@ -400,4 +400,24 @@ body.menu-open .filt-works .left {
     letter-spacing: 0;
     line-height: calc(var(--filt-line-list, 1.6) * 0.875);
   }
+}
+
+@media (max-width: 1024px), (any-pointer: coarse) {
+  .filt-works .works-mobile > main.mobile-page {
+    width: 100vw !important;
+    max-width: none !important;
+    margin-inline: calc(50% - 50vw) !important;
+    padding-inline: 0 !important;
+  }
+  .filt-works .works-thumb { padding: 0; }
+  .filt-works .works-thumb img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+  .filt-works .works-thumb img.is-portrait { max-height: 90svh; object-fit: cover; }
+}
+@media (orientation: landscape) and (max-width: 1024px), (orientation: landscape) and (any-pointer: coarse) {
+  .filt-works .works-thumb img { width: 80%; margin-inline: auto; }
+  .filt-works .works-thumb img.is-portrait { width: 40%; max-height: none; }
 }

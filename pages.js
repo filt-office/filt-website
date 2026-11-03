@@ -70,7 +70,7 @@
     return node;
   };
   const go = (href) => { if (href) location.href = href; };
-  const isMobile = () => window.matchMedia("(max-width: 768px)").matches;
+  const isMobile = () => window.matchMedia("(max-width: 1024px), (any-pointer: coarse)").matches;
 
   // Mirrors the common menu's open state onto <body> so the left column can slide (as on Works).
   const syncCommonMenuState = () => {
@@ -572,7 +572,7 @@
   // ---------- HOME ----------
   const renderHome = (data) => {
     const target = data.worksLink || worksUrl;
-    const mobileHome = window.matchMedia("(max-width: 768px), (orientation: landscape) and (hover: none) and (pointer: coarse)").matches;
+    const mobileHome = window.matchMedia("(max-width: 1024px), (any-pointer: coarse)").matches;
     if (mobileHome) {
       const next = new URL(target, location.href);
       const path = (url) => url.pathname.replace(/\/+$/, "");
