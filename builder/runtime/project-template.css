@@ -558,10 +558,10 @@ body.filt-menu-open .filt-project-mount .img-section {
     inset: auto;
     left: 0 !important;
     width: 100%;
-    height: 75vh;
-    height: 75svh;
-    flex: 0 0 75vh;
-    flex: 0 0 75svh;
+    height: 80vh;
+    height: 80svh;
+    flex: 0 0 80vh;
+    flex: 0 0 80svh;
     flex-direction: row;
     align-items: stretch;
     overflow-x: auto !important;
@@ -720,10 +720,14 @@ body.filt-menu-open .filt-project-mount .img-section {
     padding: 0;
   }
 
-  .filt-project-mount .side-section .side-single-img {
-    width: 100%;
-    height: auto;
-  }
+.filt-project-mount .side-section .side-single-img,
+.filt-project-mount .side-section .text-content img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 50svh;
+}
 
   .filt-project-mount .side-section .side-caption {
     margin-top: 6px;
