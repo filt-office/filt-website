@@ -267,3 +267,137 @@
       mount.replaceChildren(message);
     });
 })();
+
+/* FILT mobile WORKS list intro. Append once after the original works.js. */
+;(() => {
+  const mount = document.querySelector("[data-filt-works]");
+  const script = document.currentScript;
+  if (!mount || !script || script.dataset.view === "gallery" || mount.dataset.introBound) return;
+  mount.dataset.introBound = "true";
+  const mobile = matchMedia("(max-width: 768px), (orientation: landscape) and (hover: none) and (pointer: coarse)");
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  const url = new URL(location.href);
+  const entry = url.searchParams.get("filt_intro");
+  const navigation = performance.getEntriesByType("navigation")[0];
+  const skip = entry === "skip" || ["reload", "back_forward"].includes(navigation?.type)
+    || (!navigation && [1, 2].includes(performance.navigation?.type));
+  if (entry === "play" || entry === "skip") {
+    url.searchParams.delete("filt_intro");
+    history.replaceState(history.state, "", url);
+  }
+
+    const start = [
+      [237,0,237,1613.63], [419.5,1568.63,614.5,1568.63],
+      [-180,1706.13,347,1706.13], [214.5,1768.63,484.5,1768.63],
+      [457,1898.63,594.5,1898.63], [814.5,1756.13,1300,1756.13],
+      [564.5,2038.63,843,2038.63], [457,1831.13,457,2208.63],
+      [1039.5,1756.13,1039.5,1953.63], [843,2038.63,1600,2038.63],
+      [334.5,1553.63,334.5,1706.13], [739.51,2556,739.51,2173.62]
+    ];
+    const gathered = [
+      [494.5,1163,494.5,1393], [482,1175.5,564.5,1175.5],
+      [452,1265.5,477,1265.5], [512,1265.5,552,1265.5],
+      [552,1265.5,592,1265.5], [627,1265.5,667,1265.5],
+      [677,1163,677,1248], [609.5,1163,609.5,1393],
+      [677,1283,677,1393], [667,1265.5,727,1265.5],
+      [552,1283,552,1393], [659.5,1380.5,597,1380.5]
+    ];
+
+  const clamp = value => Math.min(1, Math.max(0, value));
+  const ease = t => t < .5 ? 4*t*t*t : 1 - (-2*t+2)**3/2;
+  const mix = (a,b,t) => a+(b-a)*t;
+  const ns = "http://www.w3.org/2000/svg";
+  const buttonId = "filt-home-button-mobile";
+  let overlay, frame, watchdog, hiddenButton, visibility, accelerate;
+  function finish() {
+    cancelAnimationFrame(frame);
+    clearTimeout(watchdog);
+    if (hiddenButton) hiddenButton.style.visibility = visibility;
+    overlay?.remove();
+    overlay = hiddenButton = accelerate = null;
+  }
+
+  function play() {
+    if (overlay || !mobile.matches || reduced.matches || mount.dataset.view === "gallery") return;
+    overlay = document.createElement("div");
+    overlay.style.cssText = "position:fixed;inset:0;z-index:2147483646;background:white;overflow:hidden;touch-action:none;overscroll-behavior:contain";
+    overlay.addEventListener("wheel", e => e.preventDefault(), {passive:false});
+    const svg = document.createElementNS(ns,"svg");
+    svg.style.cssText = "display:block;width:100%;height:100%;fill:none;stroke:#000;stroke-linecap:butt";
+    overlay.append(svg);
+    document.body.append(overlay);
+    const lines = start.map(() => svg.appendChild(document.createElementNS(ns,"line")));
+    let started, docking, from, fromStroke, current, stroke;
+    function requestDock(now) {
+      if (docking !== undefined || !current || !hiddenButton) return;
+      docking = now;
+      from = current;
+      fromStroke = stroke;
+    }
+    accelerate = () => requestDock(performance.now());
+    overlay.addEventListener("click", accelerate);
+    function tick(now) {
+      const list = mount.querySelector(".works-mobile");
+      if (!mobile.matches || reduced.matches || (list && !list.getClientRects().length)
+          || (!list && mount.querySelector("p") && !mount.querySelector(".works-desktop"))) return finish();
+      const button = document.getElementById(buttonId);
+      const box = button?.getBoundingClientRect();
+      if (button && box.width && !hiddenButton) {
+        hiddenButton = button;
+        visibility = button.style.visibility;
+        button.style.visibility = "hidden";
+      }
+      started ??= now;
+      const elapsed = now-started;
+      const {width:w,height:h,left,top} = overlay.getBoundingClientRect();
+      svg.setAttribute("viewBox", "0 0 "+w+" "+h);
+      const scale = h/2600*1.1;
+      if (docking === undefined) {
+        const t = ease(clamp((elapsed-180)/1200));
+        current = start.map((row,i) => row.map((v,j) =>
+          (mix(v,gathered[i][j],t)-(j%2 ? 1300 : 600))*scale+(j%2 ? h : w)/2));
+        stroke = 25*scale;
+        svg.style.opacity = clamp(elapsed/200);
+        const photo = list?.querySelector(".works-thumb img");
+        if (elapsed >= 1400 && list && (!photo || photo.complete || elapsed >= 5000)) requestDock(now);
+        if (elapsed >= 5000 && !hiddenButton) return finish();
+      }
+      if (docking !== undefined) {
+        if (!box?.width || !box.height) return finish();
+        const t = ease(clamp((now-docking)/1000));
+        // The button's actual background is a centered, contained 91.67 x 76.67 SVG.
+        const k = Math.min(box.width/91.67,box.height/76.67);
+        const x = box.left-left+(box.width-91.67*k)/2;
+        const y = box.top-top+(box.height-76.67*k)/2;
+        current = from.map((row,i) => row.map((v,j) => {
+          const dest = j%2 ? y+(gathered[i][j]-1163)*k/3 : x+(gathered[i][j]-452)*k/3;
+          return mix(v,dest,t);
+        }));
+        stroke = mix(fromStroke,8.33*k,t);
+        svg.style.opacity = 1;
+        overlay.style.backgroundColor = "rgba(255,255,255,"+(1-t)+")";
+        if (t === 1) return finish();
+      }
+      svg.setAttribute("stroke-width",stroke);
+      lines.forEach((line,i) => ["x1","y1","x2","y2"].forEach((key,j) =>
+        line.setAttribute(key,current[i][j])));
+      frame = requestAnimationFrame(tick);
+    }
+    watchdog = setTimeout(finish,10000);
+    frame = requestAnimationFrame(tick);
+  }
+
+  document.addEventListener("click", event => {
+    if (!mobile.matches || mount.dataset.view === "gallery" || event.button !== 0 ||
+        event.ctrlKey || event.metaKey || event.shiftKey || event.altKey ||
+        !event.target.closest?.("#"+buttonId)) return;
+    event.preventDefault();
+    window.scrollTo({top:0,behavior:"instant"});
+    play();
+  });
+  window.addEventListener("keydown", event => {
+    if (overlay && ["Escape","Enter"].includes(event.key)) accelerate?.();
+  });
+  window.addEventListener("pagehide", finish);
+  if (!skip) play();
+})();
