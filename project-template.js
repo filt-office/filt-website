@@ -534,6 +534,28 @@
     // Parse inertly so relative image paths never load against the host page's URL.
     const description = document.createElement("template");
     description.innerHTML = project.descriptionHtml || "";
+    // Preserve authored line breaks without rendering the HTML indentation around figures and paragraphs.
+    const walker = document.createTreeWalker(description.content, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    const boundary = "br, p, div, figure, figcaption, img, ul, ol, li, blockquote, h1, h2, h3, h4, h5, h6";
+    for (const node of textNodes) {
+      if (!node.data.includes("\n") || node.parentElement?.closest("figure, pre, code, style, script")) continue;
+      const before = node.previousSibling;
+      const after = node.nextSibling;
+      const startsAtBlock = before ? before.matches?.(boundary) : !node.parentElement || node.parentElement.matches(boundary);
+      const endsAtBlock = after ? after.matches?.(boundary) : !node.parentElement || node.parentElement.matches(boundary);
+      let value = node.data;
+      if (startsAtBlock) value = value.replace(/^[ \t]*\n[ \t]*/, "");
+      if (endsAtBlock) value = value.replace(/[ \t]*\n[ \t]*$/, "");
+      const parts = value.split("\n");
+      const content = document.createDocumentFragment();
+      parts.forEach((part, index) => {
+        if (index) content.append(document.createElement("br"));
+        content.append(document.createTextNode(part));
+      });
+      node.replaceWith(content);
+    }
     description.content.querySelectorAll("img[src]").forEach((image) => {
       image.setAttribute("src", resolveAsset(image.getAttribute("src")));
     });
