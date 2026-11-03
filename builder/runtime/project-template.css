@@ -499,7 +499,12 @@ body.filt-menu-open .filt-project-mount .img-section {
   left: 240px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
+  body > .filt-project-mount {
+    position: absolute !important;
+    inset: 0 0 auto !important;
+  }
+
   .filt-project-mount::before {
     position: fixed;
     top: 39.5px;
@@ -853,7 +858,7 @@ body.filt-menu-open .filt-project-mount .img-section {
   overflow-x: hidden !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px), (hover: none) and (pointer: coarse) {
   .filt-project-mount .side-section .text-content {
     overflow-x: clip !important;
   }
@@ -869,10 +874,3 @@ body.filt-menu-open .filt-project-mount .img-section {
   color: #000;
 }
 .filt-template-error a { color: var(--filt-key, #BD005E); text-decoration: none; }
-
-@media (max-width: 768px) {
-  body > .filt-project-mount {
-    position: absolute !important;
-    inset: 0 0 auto !important;
-  }
-}
