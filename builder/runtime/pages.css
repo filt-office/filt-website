@@ -435,9 +435,7 @@ body.menu-open .filt-page .info-desktop .left {
 
 /* ==================== Mobile ==================== */
 @media (max-width: 768px) {
-  .filt-page #filt-pc-home-v2,
-  .filt-page .info-desktop { display: none; }
-  .filt-page .info-mobile { display: block; }
+  .filt-page #filt-pc-home-v2 { display: none; }
 
   /* HOME: the FILT logo unfolds, then WORKS opens. */
   .filt-page .home-loading {
@@ -469,6 +467,13 @@ body.menu-open .filt-page .info-desktop .left {
     stroke-linecap: butt;
   }
   .filt-page .home-loading.fade-out { animation: filt-page-fade-out 0.8s forwards; }
+
+}
+
+/* Shared OFFICE and NEWS mobile layout, including unfolded touch devices. */
+@media (max-width: 1024px), (any-pointer: coarse) {
+  .filt-page .info-desktop { display: none; }
+  .filt-page .info-mobile { display: block; }
 
   .filt-page .mobile-header {
     position: fixed;
