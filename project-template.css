@@ -254,7 +254,7 @@
   padding-top: 40px !important;
   background: var(--bg-color);
   z-index: 2 !important;
-  border-bottom: 0;
+  border-bottom: 0.5px solid #000;
 }
 
 .filt-project-mount .side-section .text-content,
@@ -338,15 +338,14 @@
   overflow-y: auto !important;
   background: #fff !important;
   z-index: 2 !important;
-  border-block: 0.5px solid #000 !important;
+  border-top: none !important;
 }
 
 .filt-project-mount .fixed-table table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0;
+  border-collapse: collapse;
   table-layout: fixed;
-  border-block: 0 !important;
+  border-top: 0 !important;
 }
 
 .filt-project-mount .fixed-table td {
@@ -354,7 +353,6 @@
   padding: 2px 5px;
   font-size: var(--overview-font-size);
   box-sizing: border-box;
-  border-top: 0 !important;
   border-bottom: 0.5px solid #000 !important;
   font-weight: var(--filt-weight-overview, 400);
   vertical-align: top;
@@ -391,9 +389,8 @@
   border-top: 0 !important;
 }
 
-/* The wrapper supplies the top and bottom rules. */
-.filt-project-mount .fixed-table tr:last-child td,
-.filt-project-mount .fixed-table tr:nth-last-child(2) > td.project-title-cell[rowspan="2"] {
+/* The last row sits on the window's bottom edge: no bottom line, odd or even (mobile draws its own). */
+.filt-project-mount .fixed-table tr:last-child td {
   border-bottom: 0 !important;
 }
 
@@ -647,8 +644,8 @@ body.filt-menu-open .filt-project-mount .img-section {
     padding: 3px 5px;
     font-size: var(--overview-font-size);
     line-height: var(--filt-line-overview, 1.6);
-    border-inline: 0 !important;
-    box-shadow: none;
+    border: 0 !important;
+    box-shadow: inset 0 -0.5px 0 #000;
     overflow-wrap: break-word;
     word-break: normal;
     vertical-align: top;
@@ -658,8 +655,21 @@ body.filt-menu-open .filt-project-mount .img-section {
     min-height: calc(var(--overview-row-height) - 6px);
   }
 
+  /* An odd last row: the centre line is already the table's ::after, so no extra right border; the
+     bottom line runs on under the empty half to the table's edge. */
   .filt-project-mount .fixed-table tr:nth-child(n + 3):last-child > td.field:only-child {
+    position: relative;
     border-right: 0 !important;
+  }
+
+  .filt-project-mount .fixed-table tr:nth-child(n + 3):last-child > td.field:only-child::after {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    border-bottom: 0.5px solid #000;
+    content: "";
+    pointer-events: none;
   }
 
   .filt-project-mount .fixed-table .project-title-cell {
@@ -667,7 +677,7 @@ body.filt-menu-open .filt-project-mount .img-section {
     padding-top: 3px;
     text-align: left !important;
     vertical-align: top !important;
-    box-shadow: none;
+    box-shadow: inset 0 -0.5px 0 #000;
   }
 
   .filt-project-mount .project-title-en,
