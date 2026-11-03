@@ -590,5 +590,8 @@ body.menu-open .filt-page .info-desktop .left {
     object-fit: contain;
   }
 }
+.filt-page .info-desktop[data-page="office"] .item > p {
+  white-space: pre-line;
+}
 
 @keyframes filt-page-fade-out { to { opacity: 0; } }
