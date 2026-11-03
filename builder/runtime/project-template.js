@@ -16,6 +16,7 @@
   // Keep viewport-level positioning outside Imweb's width-constrained section wrappers.
   if (mount.parentElement !== document.body) document.body.append(mount);
 
+  const TAP_SLIDE_MS = 220;
   const templateBase = new URL(".", script.src);
   // Uploaded assets are stored as relative paths (assets/<id>/PC/x.jpg) and served from the images repo.
   const imagesBase = "https://filt-office.github.io/filt-website-images/";
@@ -357,16 +358,16 @@
 
     originalSlides.forEach((image) => image.addEventListener("load", updateDrawingOverlays));
 
-    const updateSlide = (animate = true) => {
-      slides.style.transition = animate ? "transform 0.4s ease-out" : "none";
+    const updateSlide = (animate = true, duration = TAP_SLIDE_MS) => {
+      slides.style.transition = animate ? `transform ${duration}ms ease-out` : "none";
       slides.style.transform = `translateX(-${currentSlide * 100}%)`;
       updateDrawingOverlays();
     };
-    const moveSlide = (direction) => {
+    const moveSlide = (direction, duration = TAP_SLIDE_MS) => {
       if (transitioning || originalSlideCount < 2) return;
       transitioning = true;
       currentSlide += direction;
-      updateSlide();
+      updateSlide(true, duration);
     };
 
     addNavigationButton("left", "Previous drawing", () => moveSlide(-1));
@@ -391,7 +392,7 @@
       touchStartX = null;
       if (Math.abs(deltaX) > 50) {
         event.preventDefault();
-        moveSlide(deltaX > 0 ? 1 : -1);
+        moveSlide(deltaX > 0 ? 1 : -1, 400);
       }
     });
     slider.addEventListener("pointercancel", () => { touchStartX = null; });
@@ -429,21 +430,52 @@
     let isJumping = false;
     let endTimer;
     const isMobileLayout = () => window.matchMedia("(max-width: 1024px), (any-pointer: coarse)").matches;
-    const scrollToIndex = (index, smooth = true) => {
+    let tapFrame = 0;
+    let previousSnap;
+    const stopTap = () => {
+      if (!tapFrame) return;
+      cancelAnimationFrame(tapFrame);
+      tapFrame = 0;
+      section.style.scrollSnapType = previousSnap;
+    };
+    const scrollToIndex = (index, animate = true) => {
+      stopTap();
       const image = images[index];
       if (!image) return;
-      const offset = isMobileLayout() ? image.offsetLeft : image.offsetTop;
-      section.scrollTo({
-        left: isMobileLayout() ? offset : section.scrollLeft,
-        top: isMobileLayout() ? section.scrollTop : offset,
-        behavior: smooth ? "smooth" : "auto"
-      });
+      const mobile = isMobileLayout();
+      const axis = mobile ? "left" : "top";
+      const target = mobile ? image.offsetLeft : image.offsetTop;
+      const write = position => section.scrollTo({ [axis]: position, behavior: "instant" });
+      if (!animate || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        write(target);
+        return;
+      }
+      clearTimeout(endTimer);
+      const start = mobile ? section.scrollLeft : section.scrollTop;
+      const startTime = performance.now();
+      previousSnap = section.style.scrollSnapType;
+      section.style.scrollSnapType = "none";
+      const step = now => {
+        const t = Math.min(1, Math.max(0, (now - startTime) / TAP_SLIDE_MS));
+        write(start + (target - start) * (1 - (1 - t) ** 3));
+        if (t < 1) tapFrame = requestAnimationFrame(step);
+        else {
+          stopTap();
+          if (index === 0 || index === images.length - 1) {
+            currentIndex = index === 0 ? images.length - 2 : 1;
+            scrollToIndex(currentIndex, false);
+          }
+        }
+      };
+      tapFrame = requestAnimationFrame(step);
     };
+    section.addEventListener("wheel", stopTap, { passive: true });
+    section.addEventListener("pointercancel", stopTap);
     requestAnimationFrame(() => scrollToIndex(currentIndex, false));
     section.addEventListener("scroll", () => {
       clearTimeout(endTimer);
       endTimer = setTimeout(() => {
-        if (isJumping) return;
+        if (isJumping || tapFrame) return;
         let nearestIndex = 0;
         let nearestDistance = Infinity;
         images.forEach((image, index) => {
@@ -465,10 +497,12 @@
       }, 90);
     }, { passive: true });
     section.addEventListener("click", (event) => {
-      if (isJumping) return;
+      if (isJumping || tapFrame) return;
       const previousImage = isMobileLayout()
         ? (event.clientX - section.getBoundingClientRect().left) / section.clientWidth <= 0.4
         : (event.clientY - section.getBoundingClientRect().top) / section.clientHeight <= 0.4;
+      if (currentIndex === 0) currentIndex = images.length - 2;
+      if (currentIndex === images.length - 1) currentIndex = 1;
       currentIndex += previousImage ? -1 : 1;
       scrollToIndex(currentIndex, true);
     });
