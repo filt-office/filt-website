@@ -43,16 +43,16 @@
       {
         "id": "overview",
         "name": "개요표",
-        "pc": 12,
-        "mobile": 12,
+        "pc": 10,
+        "mobile": 10,
         "weight": 400,
         "line": 1.6
       },
       {
         "id": "overview-title",
         "name": "개요표 제목",
-        "pc": 12,
-        "mobile": 12,
+        "pc": 10,
+        "mobile": 10,
         "weight": 700,
         "line": 1.3
       },
