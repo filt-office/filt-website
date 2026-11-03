@@ -434,7 +434,7 @@ body.menu-open .filt-page .info-desktop .left {
 .filt-page .info-desktop .portrait .thumb { max-height: calc(100vh - 300px); object-fit: contain; }
 
 /* ==================== Mobile ==================== */
-@media (max-width: 768px) {
+@media (max-width: 1024px), (any-pointer: coarse) {
   .filt-page #filt-pc-home-v2 { display: none; }
 
   /* HOME: the FILT logo unfolds, then WORKS opens. */
@@ -603,3 +603,14 @@ body.menu-open .filt-page .info-desktop .left {
 }
 
 @keyframes filt-page-fade-out { to { opacity: 0; } }
+
+@media (max-width: 1024px), (any-pointer: coarse) {
+  .filt-page .info-mobile > main.mobile-page {
+    box-sizing: border-box !important;
+    width: 100vw !important;
+    max-width: none !important;
+    margin-inline: calc(50% - 50vw) !important;
+    padding-inline: 8px !important;
+  }
+  .filt-page .office-section { margin-left: 0; }
+}
