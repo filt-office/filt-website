@@ -473,7 +473,16 @@
       scrollToIndex(currentIndex, true);
     });
     section.addEventListener("contextmenu", (event) => event.preventDefault());
-    window.addEventListener("resize", () => requestAnimationFrame(() => scrollToIndex(currentIndex, false)));
+    let previousWidth = section.clientWidth;
+    let wasMobile = isMobileLayout();
+    window.addEventListener("resize", () => {
+      const mobile = isMobileLayout();
+      const width = section.clientWidth;
+      if (mobile && wasMobile && width === previousWidth) return;
+      previousWidth = width;
+      wasMobile = mobile;
+      requestAnimationFrame(() => scrollToIndex(currentIndex, false));
+    });
   };
 
   const createToolbar = () => {
