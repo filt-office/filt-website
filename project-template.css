@@ -880,7 +880,9 @@ body.filt-menu-open .filt-project-mount .img-section {
 .filt-template-error a { color: var(--filt-key, #BD005E); text-decoration: none; }
 
 @media (max-width: 768px), (hover: none) and (pointer: coarse) {
-  .filt-project-mount .mobile-project-layout .img-section img.landscape {
-    object-position: center center !important;
+  .filt-project-mount .page-container.mobile-project-layout .img-section > img {
+    object-fit: contain !important;
+    object-position: 50% 50% !important;
+    padding: 0 !important;
   }
 }
