@@ -11,7 +11,14 @@
     "stroke": 5,
     "color": "black",
     "duration": 0.8,
-    "ease": "power2.inOut"
+    "ease": "power2.inOut",
+    "intro": {
+      "scale": 0.6,
+      "appear": 0.1,
+      "gather": 1.8,
+      "hold": 0.1,
+      "dock": 1
+    }
   },
   "type": {
     "family": "'Suit', 'Pretendard Variable', 'Noto Sans KR', sans-serif",
@@ -69,6 +76,19 @@
   },
   "motion": {
     "panel": 0.35,
-    "hover": 0.2
+    "hover": 0.2,
+    "slide": 1,
+    "slideInterval": 10,
+    "slideEase": "cubic-bezier(.45,0,.55,1)"
+  },
+  "layout": {
+    "panelMin": 300,
+    "panelVw": 28,
+    "panelMax": 430,
+    "menuHide": 210,
+    "padSmall": 7,
+    "padLarge": 15,
+    "photoPC": 2560,
+    "photoMOB": 1600
   }
 }
