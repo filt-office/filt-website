@@ -212,17 +212,17 @@
       "program": "Religious",
       "location": "Suwon",
       "status": "Built",
-      "thumb": "assets/works/PC/261001--26.jpg",
-      "cardThumb": "assets/works/PC/261001--24.jpg",
+      "thumb": "assets/works/PC/261001--26-2.jpg",
+      "cardThumb": "",
       "mobileShape": "tall",
-      "link": "/Yaein_Church_Renovation",
+      "link": "",
       "show": {
         "list": true,
         "gallery": true,
         "mobile": true
       },
-      "galleryOrder": 2,
-      "projectId": "yaein-church-remodeling"
+      "galleryOrder": null,
+      "projectId": "yaein-church-renovation"
     },
     {
       "id": "adamo-studio",
