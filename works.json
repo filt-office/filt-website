@@ -204,16 +204,16 @@
       "galleryOrder": 10
     },
     {
-      "id": "yaein-church-remodeling",
+      "id": "yaein-church-renovation",
       "category": "interior",
-      "nameKo": "예인교회 본당 리모델링",
-      "nameEn": "Yaein Church Remodeling",
+      "nameKo": "예인교회 본당 리노베이션",
+      "nameEn": "Yaein Church Renovation",
       "year": "2026",
       "program": "Religious",
       "location": "Suwon",
-      "status": "In Progress",
-      "thumb": "assets/works/PC/b260daa845481.jpg",
-      "cardThumb": "",
+      "status": "Built",
+      "thumb": "assets/works/PC/261001--26.jpg",
+      "cardThumb": "assets/works/PC/261001--24.jpg",
       "mobileShape": "tall",
       "link": "/Yaein_Church_Renovation",
       "show": {
@@ -221,7 +221,8 @@
         "gallery": true,
         "mobile": true
       },
-      "galleryOrder": 2
+      "galleryOrder": 2,
+      "projectId": "yaein-church-remodeling"
     },
     {
       "id": "adamo-studio",

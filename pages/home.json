@@ -3,6 +3,55 @@
   "worksLink": "/works_list",
   "slides": [
     {
+      "src": "assets/pages/PC/261001--27.jpg",
+      "position": "center center",
+      "alt": "Yaein Church Renovation",
+      "title": "Yaein Church Renovation",
+      "titleKo": "예인교회 본당 리노베이션"
+    },
+    {
+      "src": "assets/pages/PC/261001--19.jpg",
+      "position": "center center",
+      "alt": "Yaein Church Renovation",
+      "title": "Yaein Church Renovation",
+      "titleKo": "예인교회 본당 리노베이션"
+    },
+    {
+      "src": "assets/pages/PC/261001--22.jpg",
+      "position": "center center",
+      "alt": "Yaein Church Renovation",
+      "title": "Yaein Church Renovation",
+      "titleKo": "예인교회 본당 리노베이션"
+    },
+    {
+      "src": "assets/pages/PC/251126--3.jpg",
+      "position": "center bottom",
+      "title": "Tempin Office",
+      "titleKo": "템프인 오피스",
+      "alt": "Tempin Project"
+    },
+    {
+      "src": "assets/pages/PC/251126--5.jpg",
+      "position": "center center",
+      "title": "Tempin Office",
+      "titleKo": "템프인 오피스",
+      "alt": "Tempin Project"
+    },
+    {
+      "src": "assets/pages/PC/251126--9.jpg",
+      "position": "center center",
+      "title": "Tempin Office",
+      "titleKo": "템프인 오피스",
+      "alt": "Tempin Project"
+    },
+    {
+      "src": "assets/pages/PC/251126--11.jpg",
+      "position": "center center",
+      "title": "Tempin Office",
+      "titleKo": "템프인 오피스",
+      "alt": "Tempin Project"
+    },
+    {
       "src": "assets/pages/PC/2509_filt_healing-center_jpeg_fin-20.jpg",
       "position": "center bottom",
       "title": "Yaein Church Healing Center",
@@ -38,46 +87,11 @@
       "alt": "Sejong-no Church Annex"
     },
     {
-      "src": "assets/pages/PC/251126--3.jpg",
-      "position": "center bottom",
-      "title": "Tempin Office",
-      "titleKo": "템프인 오피스",
-      "alt": "Tempin Project"
-    },
-    {
-      "src": "assets/pages/PC/251126--5.jpg",
-      "position": "center center",
-      "title": "Tempin Office",
-      "titleKo": "템프인 오피스",
-      "alt": "Tempin Project"
-    },
-    {
-      "src": "assets/pages/PC/251126--9.jpg",
-      "position": "center center",
-      "title": "Tempin Office",
-      "titleKo": "템프인 오피스",
-      "alt": "Tempin Project"
-    },
-    {
-      "src": "assets/pages/PC/251126--11.jpg",
-      "position": "center center",
-      "title": "Tempin Office",
-      "titleKo": "템프인 오피스",
-      "alt": "Tempin Project"
-    },
-    {
       "src": "assets/pages/PC/img_1548_edit_low_color_fakixj.jpg",
       "position": "center center",
       "title": "Adamo Studio",
       "titleKo": "아다모 스튜디오",
-      "alt": "Ovino Studio"
-    },
-    {
-      "src": "assets/pages/PC/9_a-2307-02_-_home.jpg",
-      "position": "center center",
-      "title": "Hajung-dong Office",
-      "titleKo": "하중동 사무소",
-      "alt": "Hajung-dong office"
+      "alt": "Adamo Studio"
     }
   ]
 }
