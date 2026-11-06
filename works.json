@@ -37,7 +37,7 @@
         "gallery": true,
         "mobile": true
       },
-      "galleryOrder": 1
+      "galleryOrder": 2
     },
     {
       "id": "tempin-office",
@@ -221,7 +221,7 @@
         "gallery": true,
         "mobile": true
       },
-      "galleryOrder": null,
+      "galleryOrder": 1,
       "projectId": "yaein-church-renovation"
     },
     {
